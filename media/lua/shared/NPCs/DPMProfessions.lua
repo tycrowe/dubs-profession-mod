@@ -13,3146 +13,6 @@ function table.contains(table, element)
     return false
 end
 
-DPMProfessionsConfig = {
-    {
-        type = "dpm_lifeguard",
-        name = "Lifeguard",
-        icon = "dpm_lifeguard.png",
-        cost = -2,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 1.0,
-            Strength = 1.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = 2.0,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 1.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_paramedic",
-        name = "Paramedic",
-        icon = "dpm_paramedic.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 3.0,
-            Strength = 3.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 2.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_registered_nurse",
-        name = "Registered Nurse",
-        icon = "dpm_registered_nurse.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 1.0,
-            Strength = 2.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = 2.0,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 5.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_surgeon",
-        name = "Surgeon",
-        icon = "dpm_surgeon.png",
-        cost = -8,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 2.0,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = 1.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 8.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = 3.0,
-            LongBlade = -100,
-            SmallBlunt = 3.0,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_psychiatrist",
-        name = "Psychiatrist",
-        icon = "dpm_psychiatrist.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = 2.0,
-            Nimble = 3.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 6.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_zookeeper",
-        name = "Zookeeper",
-        icon = "dpm_zookeeper.png",
-        cost = -6,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 3.0,
-            Strength = 2.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = 2.0,
-            Reloading = 2.0,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = 2.0,
-            Firearm = 1.0,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_veterinarian",
-        name = "Veterinarian",
-        icon = "dpm_veterinarian.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = 2.0,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 2.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = 3.0,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_veterinarian_surgeon",
-        name = "Veterinarian Surgeon",
-        icon = "dpm_veterinarian_surgeon.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = 1.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = 1.0,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 4.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = 1.0,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_laboratory_technician",
-        name = "Laboratory Technician",
-        icon = "dpm_laboratory_technician.png",
-        cost = 0,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = 3.0,
-            Doctor = 1.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_botanist",
-        name = "Botanist",
-        icon = "dpm_botanist.png",
-        cost = -6,
-        desc = "",
-        perks = {
-            Cooking = 2.0,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = 1.0,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = 7.0,
-            Doctor = 2.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = 1.0,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_dentist",
-        name = "Dentist",
-        icon = "dpm_dentist.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 6.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = 2.0,
-            LongBlade = -100,
-            SmallBlunt = 3.0,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_pharmacist",
-        name = "Pharmacist",
-        icon = "dpm_pharmacist.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = 2.0,
-            Doctor = 3.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = 1.0,
-            LongBlade = -100,
-            SmallBlunt = 2.0,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_offshore_worker",
-        name = "Offshore Worker",
-        icon = "dpm_offshore_worker.png",
-        cost = -8,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 3.0,
-            Strength = 2.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = 2.0,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 3.0,
-            MetalWelding = 3.0,
-            Mechanics = 2.0,
-            Spear = -100,
-            Maintenance = 1.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_plumber",
-        name = "Plumber",
-        icon = "dpm_plumber.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 1.0,
-            Strength = 1.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = 1.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = 3.0,
-            Mechanics = 1.0,
-            Spear = -100,
-            Maintenance = 4.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_blacksmith",
-        name = "Blacksmith",
-        icon = "dpm_blacksmith.png",
-        cost = -9,
-        desc = "",
-        perks = {
-            Cooking = 2.0,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = 3.0,
-            Maintenance = 2.0,
-            SmallBlade = 3.0,
-            LongBlade = 3.0,
-            SmallBlunt = 3.0,
-            Tailoring = 2.0
-        }
-    },
-    {
-        type = "dpm_gunsmith",
-        name = "Gunsmith",
-        icon = "dpm_gunsmith.png",
-        cost = -7,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = 4.0,
-            Reloading = 4.0,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = 4.0,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = 3.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_architect",
-        name = "Architect",
-        icon = "dpm_architect.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = 4.0,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 2.0,
-            MetalWelding = 3.0,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_tailor",
-        name = "Tailor",
-        icon = "dpm_tailor.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = 1.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = 3.0,
-            SmallBlade = 2.0,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = 5.0
-        }
-    },
-    {
-        type = "dpm_landscaper",
-        name = "Landscaper",
-        icon = "dpm_landscaper.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 2.0,
-            Strength = 3.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = 4.0,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_programmer",
-        name = "Programmer",
-        icon = "dpm_programmer.png",
-        cost = 0,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 4.0,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_software_engineer",
-        name = "Software Engineer",
-        icon = "dpm_software_engineer.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 6.0,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_financial_analyst",
-        name = "Financial Analyst",
-        icon = "dpm_financial_analyst.png",
-        cost = -2,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 5.0,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_data_scientist",
-        name = "Data Scientist",
-        icon = "dpm_data_scientist.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 7.0,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_computer_scientist",
-        name = "Computer Scientist",
-        icon = "dpm_computer_scientist.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 8.0,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_accountant",
-        name = "Accountant",
-        icon = "dpm_accountant.png",
-        cost = 2,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_stock_broker",
-        name = "Stock Broker",
-        icon = "dpm_stock_broker.png",
-        cost = 2,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = 1.0,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_loan_officer",
-        name = "Loan Officer",
-        icon = "dpm_loan_officer.png",
-        cost = 1,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = 1.0,
-            Nimble = -100,
-            Sneak = 1.0,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_claims_adjuster",
-        name = "Claims Adjuster",
-        icon = "dpm_claims_adjuster.png",
-        cost = 2,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_salesman",
-        name = "Salesman",
-        icon = "dpm_sales_person.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = 1.0,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 1.0,
-            MetalWelding = -100,
-            Mechanics = 3.0,
-            Spear = -100,
-            Maintenance = 3.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_entrepreneur",
-        name = "Entrepreneur",
-        icon = "dpm_entrepreneur.png",
-        cost = -8,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = 1.0,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = 1.0,
-            Survivalist = 1.0,
-            Fishing = 1.0,
-            Trapping = 1.0,
-            Firearm = -100,
-            PlantScavenging = 1.0,
-            Doctor = 1.0,
-            Electricity = 1.0,
-            MetalWelding = 1.0,
-            Mechanics = 1.0,
-            Spear = 1.0,
-            Maintenance = 1.0,
-            SmallBlade = 1.0,
-            LongBlade = 1.0,
-            SmallBlunt = 1.0,
-            Tailoring = 1.0
-        }
-    },
-    {
-        type = "dpm_lawyer",
-        name = "Lawyer",
-        icon = "dpm_lawyer.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = 2.0,
-            Sneak = 2.0,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = 2.0,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_judge",
-        name = "Judge",
-        icon = "dpm_judge.png",
-        cost = 0,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = 4.0,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_detective",
-        name = "Detective",
-        icon = "dpm_detective.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = 2.0,
-            Reloading = 2.0,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = 3.0,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_landlord",
-        name = "Landlord",
-        icon = "dpm_landlord.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 3.0,
-            MetalWelding = 3.0,
-            Mechanics = 2.0,
-            Spear = -100,
-            Maintenance = 3.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_politician",
-        name = "Politician",
-        icon = "dpm_politician.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = 3.0,
-            Nimble = 3.0,
-            Sneak = 3.0,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_librarian",
-        name = "Librarian",
-        icon = "dpm_librarian.png",
-        cost = 0,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = 2.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = 2.0
-        }
-    },
-    {
-        type = "dpm_garbage_man",
-        name = "Garbage Man",
-        icon = "dpm_janitor.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 3.0,
-            Strength = 3.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = 2.0,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_correctional_officer",
-        name = "Correctional Officer",
-        icon = "dpm_correctional_officer.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 2.0,
-            Strength = 3.0,
-            Blunt = 2.0,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = 2.0,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_public_defender",
-        name = "Public Defender",
-        icon = "dpm_public_defender.png",
-        cost = 2,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_pilot",
-        name = "Pilot",
-        icon = "dpm_pilot.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = 3.0,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 1.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = 2.0,
-            Spear = -100,
-            Maintenance = 3.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_soldier",
-        name = "Soldier",
-        icon = "dpm_soldier.png",
-        cost = -16,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 5.0,
-            Strength = 5.0,
-            Blunt = 2.0,
-            Axe = -100,
-            Sprinting = 4.0,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = 5.0,
-            Reloading = 4.0,
-            Farming = -100,
-            Survivalist = 2.0,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = 5.0,
-            PlantScavenging = -100,
-            Doctor = 1.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_mercenary",
-        name = "Mercenary",
-        icon = "dpm_mercenary.png",
-        cost = -15,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 5.0,
-            Strength = 5.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = 4.0,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = 5.0,
-            Reloading = 3.0,
-            Farming = -100,
-            Survivalist = 2.0,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = 5.0,
-            PlantScavenging = -100,
-            Doctor = 1.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_helicopter_pilot",
-        name = "Helicopter Pilot",
-        icon = "dpm_helicopter_pilot.png",
-        cost = -12,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 4.0,
-            Strength = 2.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = 2.0,
-            Reloading = 2.0,
-            Farming = -100,
-            Survivalist = 3.0,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = 1.0,
-            PlantScavenging = -100,
-            Doctor = 2.0,
-            Electricity = -100,
-            MetalWelding = 3.0,
-            Mechanics = 4.0,
-            Spear = -100,
-            Maintenance = 2.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_fighter_pilot",
-        name = "Fighter Pilot",
-        icon = "dpm_fighter_pilot.png",
-        cost = -12,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 3.0,
-            Strength = 3.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = 2.0,
-            Reloading = 2.0,
-            Farming = -100,
-            Survivalist = 4.0,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = 1.0,
-            PlantScavenging = -100,
-            Doctor = 1.0,
-            Electricity = -100,
-            MetalWelding = 3.0,
-            Mechanics = 2.0,
-            Spear = -100,
-            Maintenance = 3.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_hacker",
-        name = "Hacker",
-        icon = "dpm_hacker.png",
-        cost = -6,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = 1.0,
-            Nimble = 3.0,
-            Sneak = 4.0,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = 1.0,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 3.0,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_paparazzi",
-        name = "Paparazzi",
-        icon = "dpm_paparazzi.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = 2.0,
-            Nimble = 2.0,
-            Sneak = 2.0,
-            Woodwork = -100,
-            Aiming = 3.0,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = 2.0,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_mobster",
-        name = "Mobster",
-        icon = "dpm_mobster.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 2.0,
-            Strength = 1.0,
-            Blunt = 2.0,
-            Axe = -100,
-            Sprinting = 1.0,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = 3.0,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_serial_killer",
-        name = "Serial Killer",
-        icon = "dpm_serial_killer.png",
-        cost = -16,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 3.0,
-            Strength = 3.0,
-            Blunt = 5.0,
-            Axe = 5.0,
-            Sprinting = -100,
-            Lightfoot = 3.0,
-            Nimble = 1.0,
-            Sneak = 2.0,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = 2.0,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = 3.0,
-            LongBlade = 3.0,
-            SmallBlunt = 3.0,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_hitman",
-        name = "Hitman",
-        icon = "dpm_hitman.png",
-        cost = -10,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 2.0,
-            Strength = 3.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = 2.0,
-            Nimble = 2.0,
-            Sneak = 4.0,
-            Woodwork = -100,
-            Aiming = 2.0,
-            Reloading = 2.0,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = 3.0,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = 1.0,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_priest",
-        name = "Priest",
-        icon = "dpm_priest.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = 1.0,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = 2.0,
-            Survivalist = -100,
-            Fishing = 2.0,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = 3.0,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = 2.0,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_nun",
-        name = "Nun",
-        icon = "dpm_nun.png",
-        cost = -2,
-        desc = "",
-        perks = {
-            Cooking = 1.0,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 1.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = 2.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = 1.0,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_missionary",
-        name = "Missionary",
-        icon = "dpm_missionary.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = 1.0,
-            Fitness = 2.0,
-            Strength = 1.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = 2.0,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = 1.0,
-            Survivalist = 1.0,
-            Fishing = 1.0,
-            Trapping = 1.0,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_spiritual_leader",
-        name = "Spiritual Leader",
-        icon = "dpm_spiritual_leader.png",
-        cost = 1,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 1.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = 2.0
-        }
-    },
-    {
-        type = "dpm_psychic",
-        name = "Psychic",
-        icon = "dpm_psychic.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = 2.0,
-            LongBlade = -100,
-            SmallBlunt = 2.0,
-            Tailoring = 2.0
-        }
-    },
-    {
-        type = "dpm_social_worker",
-        name = "Social Worker",
-        icon = "dpm_social_worker.png",
-        cost = -2,
-        desc = "",
-        perks = {
-            Cooking = 1.0,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 2.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = 2.0
-        }
-    },
-    {
-        type = "dpm_teacher",
-        name = "Teacher",
-        icon = "dpm_teacher.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = 1.0,
-            Survivalist = 2.0,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 1.0,
-            Electricity = 1.0,
-            MetalWelding = 1.0,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_professor",
-        name = "Professor",
-        icon = "dpm_professor.png",
-        cost = -7,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = 3.0,
-            Survivalist = 5.0,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 2.0,
-            Electricity = 2.0,
-            MetalWelding = 2.0,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_student",
-        name = "Student",
-        icon = "dpm.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 2.0,
-            Strength = 2.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = 4.0,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = 2.0,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_baker",
-        name = "Baker",
-        icon = "dpm_baker.png",
-        cost = 0,
-        desc = "",
-        perks = {
-            Cooking = 4.0,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_florist",
-        name = "Florist",
-        icon = "dpm_florist.png",
-        cost = -5,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = 2.0,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = 3.0,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = 1.0,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = 4.0
-        }
-    },
-    {
-        type = "dpm_dietitian",
-        name = "Dietitian",
-        icon = "dpm_dietitian.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = 6.0,
-            Fitness = 1.0,
-            Strength = 1.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = 1.0,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_writer",
-        name = "Writer",
-        icon = "dpm_writer.png",
-        cost = 1,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = 1.0,
-            SmallBlade = 2.0,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_musician",
-        name = "Musician",
-        icon = "dpm_musician.png",
-        cost = 1,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = 3.0,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_dancer",
-        name = "Dancer",
-        icon = "dpm.png",
-        cost = -6,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 2.0,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = 6.0,
-            Nimble = 4.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = 1.0
-        }
-    },
-    {
-        type = "dpm_actor",
-        name = "Actor",
-        icon = "dpm_actor.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = 2.0,
-            Nimble = 2.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = 2.0
-        }
-    },
-    {
-        type = "dpm_artist",
-        name = "Artist",
-        icon = "dpm_artist.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = 4.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = 2.0,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = 1.0
-        }
-    },
-    {
-        type = "dpm_comedian",
-        name = "Comedian",
-        icon = "dpm_comedian.png",
-        cost = 2,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_photographer",
-        name = "Photographer",
-        icon = "dpm_photographer.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = 5.0,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = 2.0,
-            Fishing = -100,
-            Trapping = 1.0,
-            Firearm = -100,
-            PlantScavenging = 1.0,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_professional_athlete_[football]",
-        name = "Professional Athlete [Football]",
-        icon = "dpm_professional_athlete_football.png",
-        cost = -10,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 8.0,
-            Strength = 6.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = 5.0,
-            Lightfoot = -100,
-            Nimble = 1.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_professional_athlete_[baseball]",
-        name = "Professional Athlete [Baseball]",
-        icon = "dpm_professional_athlete_baseball.png",
-        cost = -10,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 6.0,
-            Strength = 4.0,
-            Blunt = 5.0,
-            Axe = -100,
-            Sprinting = 6.0,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_professional_athlete_[basketball]",
-        name = "Professional Athlete [Basketball]",
-        icon = "dpm_professional_athlete_basketball.png",
-        cost = -10,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 7.0,
-            Strength = 2.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = 4.0,
-            Lightfoot = 3.0,
-            Nimble = 5.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_professional_athlete_[track]",
-        name = "Professional Athlete [Track]",
-        icon = "dpm_professional_athlete_track.png",
-        cost = -10,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 8.0,
-            Strength = 2.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = 10.0,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_referee",
-        name = "Referee",
-        icon = "dpm_referee.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 3.0,
-            Strength = 3.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_bartender",
-        name = "Bartender",
-        icon = "dpm_bartender.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = 4.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = 2.0,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_magician",
-        name = "Magician",
-        icon = "dpm_magician.png",
-        cost = -7,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = 5.0,
-            Sneak = 5.0,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = 1.0,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = 1.0,
-            Tailoring = 2.0
-        }
-    },
-    {
-        type = "dpm_clown",
-        name = "Clown",
-        icon = "dpm_clown.png",
-        cost = -4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 2.0,
-            Strength = -100,
-            Blunt = 1.0,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = 3.0,
-            Nimble = 3.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_video_game_programmer",
-        name = "Video Game Programmer",
-        icon = "dpm_video_game_programmer.png",
-        cost = 1,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = 2.0,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_performer",
-        name = "Performer",
-        icon = "dpm_performer.png",
-        cost = -6,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = 3.0,
-            Strength = 3.0,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = 2.0,
-            Nimble = 3.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = 1.0
-        }
-    },
-    {
-        type = "dpm_film_director",
-        name = "Film Director",
-        icon = "dpm_film_director.png",
-        cost = -3,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = 1.0,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = 5.0,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_waiter",
-        name = "Waiter",
-        icon = "dpm_waiter.png",
-        cost = 4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_warehouse_worker",
-        name = "Warehouse Worker",
-        icon = "dpm_warehouse_worker.png",
-        cost = 4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_secretary",
-        name = "Secretary",
-        icon = "dpm.png",
-        cost = 4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_taxi_driver",
-        name = "Taxi Driver",
-        icon = "dpm_taxi_driver.png",
-        cost = 4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    },
-    {
-        type = "dpm_retail_worker",
-        name = "Retail Worker",
-        icon = "dpm_retail_worker.png",
-        cost = 4,
-        desc = "",
-        perks = {
-            Cooking = -100,
-            Fitness = -100,
-            Strength = -100,
-            Blunt = -100,
-            Axe = -100,
-            Sprinting = -100,
-            Lightfoot = -100,
-            Nimble = -100,
-            Sneak = -100,
-            Woodwork = -100,
-            Aiming = -100,
-            Reloading = -100,
-            Farming = -100,
-            Survivalist = -100,
-            Fishing = -100,
-            Trapping = -100,
-            Firearm = -100,
-            PlantScavenging = -100,
-            Doctor = -100,
-            Electricity = -100,
-            MetalWelding = -100,
-            Mechanics = -100,
-            Spear = -100,
-            Maintenance = -100,
-            SmallBlade = -100,
-            LongBlade = -100,
-            SmallBlunt = -100,
-            Tailoring = -100
-        }
-    }
-}
-DPMPerkMapping = {
-    Cooking = Perks.Cooking,
-    Fitness = Perks.Fitness,
-    Strength = Perks.Strength,
-    Blunt = Perks.Blunt,
-    Axe = Perks.Axe,
-    Sprinting = Perks.Sprinting,
-    Lightfoot = Perks.Lightfoot,
-    Nimble = Perks.Nimble,
-    Sneak = Perks.Sneak,
-    Woodwork = Perks.Woodwork,
-    Aiming = Perks.Aiming,
-    Reloading = Perks.Reloading,
-    Farming = Perks.Farming,
-    Survivalist = Perks.Survivalist,
-    Fishing = Perks.Fishing,
-    Trapping = Perks.Trapping,
-    Firearm = Perks.Firearm,
-    PlantScavenging = Perks.PlantScavenging,
-    Doctor = Perks.Doctor,
-    Electricity = Perks.Electricity,
-    MetalWelding = Perks.MetalWelding,
-    Mechanics = Perks.Mechanics,
-    Spear = Perks.Spear,
-    Maintenance = Perks.Maintenance,
-    SmallBlade = Perks.SmallBlade,
-    LongBlade = Perks.LongBlade,
-    SmallBlunt = Perks.SmallBlunt,
-    Tailoring = Perks.Tailoring
-}
 DPMProfessions = {}
 
 -- Stolen from MainCreationMethods, requiring doesn't seem to work here, so I'll just steal it :)
@@ -3190,132 +50,909 @@ function DPMProfessions.SetProfessionDescription(prof)
     prof:setDescription(desc)
 end
 
+DPMProfessions.DoTraits = function()
+    for _, trait in pairs(DPMFreeTraitConfig) do
+        local created_trait = TraitFactory.addTrait(trait['type'], trait['name'], trait['cost'], trait['desc'], trait['profession']);
+        trait['boosts'](created_trait)
+    end
+    -- Add our custom traits. [Not in game!]
+    -- TODO
+end
+
+DPMPerkMapping = {
+    Cooking = Perks.Cooking,
+    Fitness = Perks.Fitness,
+    Strength = Perks.Strength,
+    Blunt = Perks.Blunt,
+    Axe = Perks.Axe,
+    Sprinting = Perks.Sprinting,
+    Lightfoot = Perks.Lightfoot,
+    Nimble = Perks.Nimble,
+    Sneak = Perks.Sneak,
+    Woodwork = Perks.Woodwork,
+    Aiming = Perks.Aiming,
+    Reloading = Perks.Reloading,
+    Farming = Perks.Farming,
+    Survivalist = Perks.Survivalist,
+    Fishing = Perks.Fishing,
+    Trapping = Perks.Trapping,
+    Firearm = Perks.Firearm,
+    PlantScavenging = Perks.PlantScavenging,
+    Doctor = Perks.Doctor,
+    Electricity = Perks.Electricity,
+    MetalWelding = Perks.MetalWelding,
+    Mechanics = Perks.Mechanics,
+    Spear = Perks.Spear,
+    Maintenance = Perks.Maintenance,
+    SmallBlade = Perks.SmallBlade,
+    LongBlade = Perks.LongBlade,
+    SmallBlunt = Perks.SmallBlunt,
+    Tailoring = Perks.Tailoring
+}
+
+DPMFreeTraitConfig = {
+    {
+        type = "dpm_KeenHearing",
+        name = getText("UI_trait_keenhearing"),
+        cost = -2,
+        desc = getText("UI_trait_keenhearingdesc"),
+        profession = true,
+        boosts = function(trait)
+
+        end
+    },
+    {
+        type = "dpm_Cowardly",
+        name = getText("UI_trait_cowardly"),
+        cost = 3,
+        desc = getText("UI_trait_keenhearingdesc"),
+        profession = true,
+        boosts = function(trait)
+
+        end
+    },
+    {
+        type = "dpm_EagleEyed",
+        name = getText("UI_trait_eagleeyed"),
+        cost = -4,
+        desc = getText("UI_trait_eagleeyeddesc"),
+        profession = true,
+        boosts = function(trait)
+
+        end
+    },
+    {
+        type = "dpm_Strong",
+        name = getText("UI_trait_strong"),
+        cost = -8,
+        desc = getText("UI_trait_strongdesc"),
+        profession = true,
+        boosts = function(trait)
+
+        end
+    },
+    {
+        type = "dpm_Feeble",
+        name = getText("UI_trait_feeble"),
+        cost = 0,
+        desc = getText("UI_trait_feebledesc"),
+        profession = true,
+        boosts = function(trait)
+
+        end
+    },
+    {
+        type = "dpm_Outdoorsman",
+        name = getText("UI_trait_outdoorsman"),
+        cost = -4,
+        desc = getText("UI_trait_outdoorsmandesc"),
+        profession = true,
+        boosts = function(trait)
+
+        end
+    },
+    {
+        type = "dpm_FastReader",
+        name = getText("UI_trait_FastReader"),
+        cost = -4,
+        desc = getText("UI_trait_FastReaderDesc"),
+        profession = true,
+        boosts = function(trait)
+
+        end
+    },
+    {
+        type = "dpm_Organized",
+        name = getText("UI_trait_Packmule"),
+        cost = -4,
+        desc = getText("UI_trait_PackmuleDesc"),
+        profession = true,
+        boosts = function(trait)
+
+        end
+    },
+    {
+        type = "dpm_Pacifist",
+        name = getText("UI_trait_Pacifist"),
+        cost = 4,
+        desc = getText("UI_trait_PacifistDesc"),
+        profession = true,
+        boosts = function(trait)
+
+        end
+    },
+    {
+        type = "dpm_Brave",
+        name = getText("UI_trait_brave"),
+        cost = -4,
+        desc = getText("UI_trait_bravedesc"),
+        profession = true,
+        boosts = function(trait)
+
+        end
+    },
+    {
+        type = "dpm_natural_learner",
+        name = "Further increased XP gains.",
+        cost = -9,
+        desc = "You gain experience slightly faster across the board.",
+        profession = true,
+        boosts = function(trait)end
+    }
+}
+
+DPMProfessions.ApplyFreeTrait = function(prof, type, with_cost)
+    local temp = TraitFactory.getTrait(type)
+    if temp ~= nil then
+        prof:addFreeTrait(type);
+        if with_cost then
+            prof:setCost(prof:getCost() + temp:getCost())
+        end
+    end
+end
+
+DPMProfessionsConfig = {
+    {
+        type = "dpm_teacher",
+        name = "Teacher",
+        icon = "dpm_teacher.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Doctor = 1
+        },
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_KeenHearing', false);
+        end
+    },
+    {
+        type = "dpm_professor",
+        name = "Professor",
+        icon = "dpm_professor.png",
+        cost = 0,
+        desc = "",
+        perks = {},
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'NightOwl', false);
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Organized', true);
+        end
+    },
+    {
+        type = "dpm_student",
+        name = "Student",
+        icon = "dpm_student.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Sprinting = 2
+        },
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Feeble', true);
+        end
+    },
+    {
+        type = "dpm_librarian",
+        name = "Librarian",
+        icon = "dpm_librarian.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Lightfoot = 2
+        },
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_FastReader', false);
+        end
+    },
+    {
+        type = "dpm_paramedic",
+        name = "Paramedic",
+        icon = "dpm_paramedic.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Doctor = 2
+        },
+        free_perks = function(prof)
+        end
+    },
+    {
+        type = "dpm_lifeguard",
+        name = "Lifeguard",
+        icon = "dpm_lifeguard.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Fitness = 3,
+            Sprinting = 2,
+            Doctor = 1
+        },
+        free_perks = function(prof)
+        end
+    },
+    {
+        type = "dpm_garbageman",
+        name = "Garbage Man",
+        icon = "dpm_janitor.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Fitness = 2,
+            Sprinting = 1
+        },
+        free_perks = function(prof)
+        end
+    },
+    {
+        type = "dpm_soldier",
+        name = "Soldier",
+        icon = "dpm_mercenary.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Fitness = 3,
+            Strength = 2,
+            Reloading = 2,
+            Aiming = 3,
+            Sprinting = 2,
+            Doctor = 1
+        },
+        free_perks = function(prof)
+        end
+    },
+    {
+        type = "dpm_waiter",
+        name = "Waiter",
+        icon = "dpm_waiter.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Nimble = 2,
+            Maintenance = 1
+        },
+        free_perks = function(prof)
+        end
+    },
+    {
+        type = "dpm_actor",
+        name = "Actor",
+        icon = "dpm_actor.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Nimble = 2,
+            Lightfoot = 1,
+            Fitness = 2
+        },
+        free_perks = function(prof)
+        end
+    },
+    {
+        type = "dpm_pilot",
+        name = "Pilot",
+        icon = "dpm_pilot.png",
+        cost = 0,
+        desc = "",
+        perks = {},
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_EagleEyed', false);
+            DPMProfessions.ApplyFreeTrait(prof, 'NightOwl', false);
+        end
+    },
+    {
+        type = "dpm_botanist",
+        name = "Botanist",
+        icon = "dpm_botanist.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            PlantScavenging = 1,
+            Farming = 2
+        },
+        free_perks = function(prof)
+        end
+    },
+    {
+        type = "dpm_referee",
+        name = "Referee",
+        icon = "dpm_referee.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Fitness = 2,
+            Sprinting = 2
+        },
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Outdoorsman', false);
+        end
+    },
+    {
+        type = "dpm_offshore_worker",
+        name = "Offshore Worker",
+        icon = "dpm_offshore_worker.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Strength = 2,
+            Electricity = 3,
+            MetalWelding = 1
+        },
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Strong', false);
+        end
+    },
+    {
+        type = "dpm_surgeon",
+        name = "Surgeon",
+        icon = "dpm_surgeon.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Doctor = 3,
+            Maintenance = 1,
+            SmallBlade = 1
+        },
+        free_perks = function(prof)
+        end
+    },
+    {
+        type = "dpm_zookeeper",
+        name = "Zookeeper",
+        icon = "dpm_zookeeper.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Aiming = 2,
+            PlantScavenging = 2,
+            Farming = 1,
+            Fitness = 1
+        },
+        free_perks = function(prof)
+
+        end
+    },
+    {
+        type = "dpm_paparazzi",
+        name = "Paparazzi",
+        icon = "dpm_paparazzi.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Sneak = 3,
+            Lightfoot = 2
+        },
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Cowardly', false);
+        end
+    },
+    {
+        type = "dpm_professional_athlete",
+        name = "Professional Athlete",
+        icon = "dpm_professional_athlete_basketball.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Sprinting = 4,
+            Strength = 4,
+            Fitness = 4
+        },
+        free_perks = function(prof)
+        end
+    },
+    {
+        type = "dpm_correctional_officer",
+        name = "Correctional Officer",
+        icon = "dpm_correctional_officer.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Strength = 2,
+            Fitness = 1
+        },
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Brave', false);
+        end
+    },
+    {
+        type = "dpm_lawyer",
+        name = "Lawyer",
+        icon = "dpm_lawyer.png",
+        cost = 0,
+        desc = "",
+        perks = {
+
+        },
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Brave', false);
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_FastReader', true);
+        end
+    },
+    {
+        type = "dpm_entrepreneur",
+        name = "Entrepreneur",
+        icon = "dpm_entrepreneur.png",
+        cost = 0,
+        desc = "",
+        perks = {},
+        free_perks = function(prof)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_natural_learner', true);
+        end
+    },
+    {
+        type = "dpm_architect",
+        name = "Architect",
+        icon = "dpm_architect.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Woodwork = 4
+        },
+        free_perks = function(prof)
+
+        end
+    }
+}
+
+function DPMProfessions.GetPassiveSkillCost(prof)
+    -- Formula v1
+    -- Calculate the passive's cost: Strength and Fitness
+    local passiveCost = 0
+    if prof['perks']['Strength'] ~= nil then
+        local strengthValue = prof['perks']['Strength']
+        if strengthValue == 2 then
+            passiveCost = passiveCost - 4
+        elseif strengthValue == 3 then
+            passiveCost = passiveCost - 5
+        elseif strengthValue == 4 then
+            passiveCost = passiveCost - 8
+        elseif strengthValue == 5 then
+            passiveCost = passiveCost - 10
+        elseif strengthValue == 6 then
+            passiveCost = passiveCost - 16
+        end
+    end
+    if prof['perks']['Fitness'] ~= nil then
+        local fitnessValue = prof['perks']['Fitness']
+        if fitnessValue == 2 then
+            passiveCost = passiveCost - 4
+        elseif fitnessValue == 3 then
+            passiveCost = passiveCost - 5
+        elseif fitnessValue == 4 then
+            passiveCost = passiveCost - 8
+        elseif fitnessValue == 5 then
+            passiveCost = passiveCost - 10
+        elseif fitnessValue == 6 then
+            passiveCost = passiveCost - 16
+        end
+    end
+    return passiveCost
+end
+
+function DPMProfessions.GetSprintingSkillCost(prof)
+    -- Sprinting
+    local cost = 0
+    if prof['perks']['Sprinting'] ~= nil then
+        local skillValue = prof['perks']['Sprinting']
+        if skillValue == 2 then
+            cost = cost - 1
+        elseif skillValue == 3 then
+            cost = cost - 2
+        elseif skillValue == 4 then
+            cost = cost - 4
+        elseif skillValue == 5 then
+            cost = cost - 6
+        elseif skillValue == 6 then
+            cost = cost - 8
+        elseif skillValue == 7 then
+            cost = cost - 10
+        elseif skillValue == 8 then
+            cost = cost - 12
+        elseif skillValue == 9 then
+            cost = cost - 14
+        elseif skillValue == 10 then
+            cost = cost - 16
+        end
+    end
+    return cost
+end
+
+function DPMProfessions.GetAgilitySkillCost(prof)
+    -- Lightfoot, Nimble, Sneak
+    local cost = 0
+
+    function CalculationHelper(skillValue)
+        if skillValue == 1 then
+            return -1
+        elseif skillValue == 2 then
+            return -2
+        elseif skillValue == 3 then
+            return -4
+        elseif skillValue == 4 then
+            return -6
+        elseif skillValue == 5 then
+            return -8
+        elseif skillValue == 6 then
+            return -10
+        elseif skillValue == 7 then
+            return -12
+        elseif skillValue == 8 then
+            return -14
+        elseif skillValue == 9 then
+            return -16
+        elseif skillValue == 10 then
+            return -18
+        end
+    end
+
+    if prof['perks']['Lightfoot'] ~= nil then
+        local skillValue = prof['perks']['Lightfoot']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Nimble'] ~= nil then
+        local skillValue = prof['perks']['Nimble']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Sneak'] ~= nil then
+        local skillValue = prof['perks']['Sneak']
+        cost = cost + CalculationHelper(skillValue)
+    end
+    return cost
+end
+
+function DPMProfessions.GetCombatSkillCost(prof)
+    -- Axe, Blunt, SmallBlunt, LongBlade, SmallBlade, Spear
+    local cost = 0
+
+    function CalculationHelper(skillValue)
+        if skillValue == 1 then
+            return 0
+        elseif skillValue == 2 then
+            return 0
+        elseif skillValue == 3 then
+            return -1
+        elseif skillValue == 4 then
+            return -2
+        elseif skillValue == 5 then
+            return -4
+        elseif skillValue == 6 then
+            return -6
+        elseif skillValue == 7 then
+            return -8
+        elseif skillValue == 8 then
+            return -10
+        elseif skillValue == 9 then
+            return -12
+        elseif skillValue == 10 then
+            return -16
+        end
+    end
+
+    if prof['perks']['Axe'] ~= nil then
+        local skillValue = prof['perks']['Axe']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Blunt'] ~= nil then
+        local skillValue = prof['perks']['Blunt']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['SmallBlunt'] ~= nil then
+        local skillValue = prof['perks']['SmallBlunt']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['LongBlade'] ~= nil then
+        local skillValue = prof['perks']['LongBlade']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['SmallBlade'] ~= nil then
+        local skillValue = prof['perks']['SmallBlade']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Spear'] ~= nil then
+        local skillValue = prof['perks']['Spear']
+        cost = cost + CalculationHelper(skillValue)
+    end
+    return cost
+end
+
+function DPMProfessions.GetMaintenanceSkillCost(prof)
+    -- Maintenance
+    local cost = 0
+
+    function CalculationHelper(skillValue)
+        if skillValue == 1 then
+            return -2
+        elseif skillValue == 2 then
+            return -4
+        elseif skillValue == 3 then
+            return -6
+        elseif skillValue == 4 then
+            return -8
+        elseif skillValue == 5 then
+            return -10
+        elseif skillValue == 6 then
+            return -12
+        elseif skillValue == 7 then
+            return -14
+        elseif skillValue == 8 then
+            return -16
+        elseif skillValue == 9 then
+            return -18
+        elseif skillValue == 10 then
+            return -20
+        end
+    end
+
+    if prof['perks']['Maintenance'] ~= nil then
+        local skillValue = prof['perks']['Maintenance']
+        cost = cost + CalculationHelper(skillValue)
+    end
+
+    return cost
+end
+
+function DPMProfessions.GetBasicCraftingSkillCost(prof)
+    -- Woodwork, Cooking, Farming, Doctor
+    local cost = 0
+
+    function CalculationHelper(skillValue)
+        if skillValue == 1 then
+            return 0
+        elseif skillValue == 2 then
+            return 0
+        elseif skillValue == 3 then
+            return -1
+        elseif skillValue == 4 then
+            return -2
+        elseif skillValue == 5 then
+            return -4
+        elseif skillValue == 6 then
+            return -6
+        elseif skillValue == 7 then
+            return -8
+        elseif skillValue == 8 then
+            return -10
+        elseif skillValue == 9 then
+            return -12
+        elseif skillValue == 10 then
+            return -16
+        end
+    end
+
+    if prof['perks']['Woodwork'] ~= nil then
+        local skillValue = prof['perks']['Woodwork']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Cooking'] ~= nil then
+        local skillValue = prof['perks']['Cooking']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Farming'] ~= nil then
+        local skillValue = prof['perks']['Farming']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Doctor'] ~= nil then
+        local skillValue = prof['perks']['Doctor']
+        cost = cost + CalculationHelper(skillValue)
+    end
+
+    return cost
+end
+
+function DPMProfessions.GetAdvancedCraftingSkillCost(prof)
+    -- Electricity, MetalWelding, Mechanics, Tailoring
+    local cost = 0
+
+    function CalculationHelper(skillValue)
+        if skillValue == 1 then
+            return 0
+        elseif skillValue == 2 then
+            return -2
+        elseif skillValue == 3 then
+            return -4
+        elseif skillValue == 4 then
+            return -6
+        elseif skillValue == 5 then
+            return -10
+        elseif skillValue == 6 then
+            return -12
+        elseif skillValue == 7 then
+            return -14
+        elseif skillValue == 8 then
+            return -16
+        elseif skillValue == 9 then
+            return -18
+        elseif skillValue == 10 then
+            return -20
+        end
+    end
+
+    if prof['perks']['Electricity'] ~= nil then
+        local skillValue = prof['perks']['Electricity']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['MetalWelding'] ~= nil then
+        local skillValue = prof['perks']['MetalWelding']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Mechanics'] ~= nil then
+        local skillValue = prof['perks']['Mechanics']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Tailoring'] ~= nil then
+        local skillValue = prof['perks']['Tailoring']
+        cost = cost + CalculationHelper(skillValue)
+    end
+
+    return cost
+end
+
+function DPMProfessions.GetFirearmSkillCost(prof)
+    -- Aiming, Reloading
+    local cost = 0
+
+    function CalculationHelper(skillValue)
+        if skillValue == 1 then
+            return 0
+        elseif skillValue == 2 then
+            return -1
+        elseif skillValue == 3 then
+            return -2
+        elseif skillValue == 4 then
+            return -4
+        elseif skillValue == 5 then
+            return -6
+        elseif skillValue == 6 then
+            return -8
+        elseif skillValue == 7 then
+            return -10
+        elseif skillValue == 8 then
+            return -12
+        elseif skillValue == 9 then
+            return -14
+        elseif skillValue == 10 then
+            return -16
+        end
+    end
+
+    if prof['perks']['Aiming'] ~= nil then
+        local skillValue = prof['perks']['Aiming']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Reloading'] ~= nil then
+        local skillValue = prof['perks']['Reloading']
+        cost = cost + CalculationHelper(skillValue)
+    end
+
+    return cost
+end
+
+function DPMProfessions.GetSurvivalistSkillCost(prof)
+    -- Fishing, Trapping, PlantScavenging
+    local cost = 0
+
+    function CalculationHelper(skillValue)
+        if skillValue == 1 then
+            return 0
+        elseif skillValue == 2 then
+            return -1
+        elseif skillValue == 3 then
+            return -2
+        elseif skillValue == 4 then
+            return -4
+        elseif skillValue == 5 then
+            return -6
+        elseif skillValue == 6 then
+            return -8
+        elseif skillValue == 7 then
+            return -10
+        elseif skillValue == 8 then
+            return -12
+        elseif skillValue == 9 then
+            return -14
+        elseif skillValue == 10 then
+            return -16
+        end
+    end
+
+    if prof['perks']['Fishing'] ~= nil then
+        local skillValue = prof['perks']['Fishing']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['Trapping'] ~= nil then
+        local skillValue = prof['perks']['Trapping']
+        cost = cost + CalculationHelper(skillValue)
+    elseif prof['perks']['PlantScavenging'] ~= nil then
+        local skillValue = prof['perks']['PlantScavenging']
+        cost = cost + CalculationHelper(skillValue)
+    end
+
+    return cost
+end
+
 DPMProfessions.DoProfessions = function()
     print("Interpreting configuration.")
     for _, v in pairs(DPMProfessionsConfig) do
-        local temp = ProfessionFactory.addProfession(v['type'], v['name'], v['icon'], v['cost']);
+        -- Calculate the cost
+        local professionCost = 0 -- set this value to add free points
+        professionCost = professionCost + DPMProfessions.GetPassiveSkillCost(v)
+        professionCost = professionCost + DPMProfessions.GetSprintingSkillCost(v)
+        professionCost = professionCost + DPMProfessions.GetAgilitySkillCost(v)
+        professionCost = professionCost + DPMProfessions.GetCombatSkillCost(v)
+        professionCost = professionCost + DPMProfessions.GetMaintenanceSkillCost(v)
+        professionCost = professionCost + DPMProfessions.GetBasicCraftingSkillCost(v)
+        professionCost = professionCost + DPMProfessions.GetAdvancedCraftingSkillCost(v)
+        professionCost = professionCost + DPMProfessions.GetFirearmSkillCost(v)
+        professionCost = professionCost + DPMProfessions.GetSurvivalistSkillCost(v)
+        print("Calculated cost of " .. v['name'] .. ": " .. professionCost)
+        local temp = ProfessionFactory.addProfession(v['type'], v['name'], v['icon'], professionCost);
         for perks_name, perks_value in pairs(v['perks']) do
             if perks_value ~= -100 then
                 temp:addXPBoost(DPMPerkMapping[perks_name], perks_value);
             end
         end
+        v['free_perks'](temp)
+        print("Successfully added " .. v['name'])
     end
     print("DPM Professions have been added, now updating descriptions.")
     local profList = ProfessionFactory.getProfessions()
     for i = 1, profList:size() do
         local prof = profList:get(i - 1)
         DPMProfessions.SetProfessionDescription(prof)
-        print("Updated description for " .. prof:getName())
     end
 end
 
 DPMProfessions.DoNewGame = function(playerObj, square)
     -- https://zomboid-javadoc.com/41.65/zombie/characters/SurvivorDesc.html
-    local desc = playerObj:getDescriptor();
-    local desc_profession = desc.Profession;
+    local profession = playerObj:getDescriptor():getProfession();
     if SandboxVars.StarterKit then
-        if string.find(desc_profession, 'dpm') then
+        if string.find(profession, 'dpm') then
             local bag = playerObj:getInventory():FindAndReturn("Base.Bag_Schoolbag");
-            if not bag then
-                bag = playerObj:getInventory():AddItem("Base.Bag_Schoolbag");
-                playerObj:setClothingItem_Back(bag);
+        end
+    end
+
+    local playerTraits = playerObj:getTraits();
+    for i = 1, playerTraits:size() do
+        local trait = playerTraits:get(i - 1);
+        if trait ~= nil and trait:contains("dpm_") then
+            getPlayer():getTraits():remove(trait);
+            trait = string.sub(trait, 5);
+            getPlayer():getTraits():add(trait);
+        end
+    end
+
+    if profession == 'dpm_entrepreneur' and playerObj:getZombieKills() <= 1 then
+        -- Pick three rand traits and apply a multiplier
+        local tooPickFrom = {
+            Perks.Cooking,
+            Perks.Woodwork,
+            Perks.Farming,
+            Perks.Fishing,
+            Perks.Trapping,
+            Perks.Tailoring,
+            Perks.MetalWelding,
+            Perks.Mechanics,
+            Perks.Electricity
+        }
+        for i = 1, 3 do
+            local rand = ZombRand(0, 8);
+            while (tooPickFrom[rand] == nil) do
+                rand = ZombRand(0, 8)
             end
-            if bag then
-                if desc_profession == 'dpm_lifeguard' then
-                    playerObj:setClothingItem_Head("Base.Glasses_SwimmingGoggles");
-                    playerObj:setClothingItem_Torso("Base.Shirt_HawaiianRed");
-                    --playerObj:setClothingItem_Hands("");
-                    playerObj:setClothingItem_Legs("Base.Shorts_ShortSport");
-                    playerObj:setClothingItem_Feet("Base.Shoes_FlipFlop");
-                elseif desc_profession == 'dpm_paramedic' then
-                elseif desc_profession == 'dpm_registered_nurse' then
-                elseif desc_profession == 'dpm_surgeon' then
-                elseif desc_profession == 'dpm_psychiatrist' then
-                elseif desc_profession == 'dpm_zookeeper' then
-                elseif desc_profession == 'dpm_veterinarian' then
-                elseif desc_profession == 'dpm_veterinarian_surgeon' then
-                elseif desc_profession == 'dpm_laboratory_technician' then
-                elseif desc_profession == 'dpm_botanist' then
-                elseif desc_profession == 'dpm_dentist' then
-                elseif desc_profession == 'dpm_pharmacist' then
-                elseif desc_profession == 'dpm_offshore_worker' then
-                elseif desc_profession == 'dpm_plumber' then
-                elseif desc_profession == 'dpm_blacksmith' then
-                elseif desc_profession == 'dpm_gunsmith' then
-                elseif desc_profession == 'dpm_architect' then
-                elseif desc_profession == 'dpm_tailor' then
-                elseif desc_profession == 'dpm_landscaper' then
-                elseif desc_profession == 'dpm_programmer' then
-                elseif desc_profession == 'dpm_software_engineer' then
-                elseif desc_profession == 'dpm_financial_analyst' then
-                elseif desc_profession == 'dpm_data_scientist' then
-                elseif desc_profession == 'dpm_computer_scientist' then
-                elseif desc_profession == 'dpm_accountant' then
-                elseif desc_profession == 'dpm_stock_broker' then
-                elseif desc_profession == 'dpm_loan_officer' then
-                elseif desc_profession == 'dpm_claims_adjuster' then
-                elseif desc_profession == 'dpm_salesman' then
-                elseif desc_profession == 'dpm_entrepreneur' then
-                elseif desc_profession == 'dpm_lawyer' then
-                elseif desc_profession == 'dpm_judge' then
-                elseif desc_profession == 'dpm_detective' then
-                elseif desc_profession == 'dpm_landlord' then
-                elseif desc_profession == 'dpm_politician' then
-                elseif desc_profession == 'dpm_librarian' then
-                elseif desc_profession == 'dpm_garbage_man' then
-                elseif desc_profession == 'dpm_correctional_officer' then
-                elseif desc_profession == 'dpm_public_defender' then
-                elseif desc_profession == 'dpm_pilot' then
-                elseif desc_profession == 'dpm_soldier' then
-                elseif desc_profession == 'dpm_mercenary' then
-                elseif desc_profession == 'dpm_helicopter_pilot' then
-                elseif desc_profession == 'dpm_fighter_pilot' then
-                elseif desc_profession == 'dpm_hacker' then
-                elseif desc_profession == 'dpm_paparazzi' then
-                elseif desc_profession == 'dpm_mobster' then
-                elseif desc_profession == 'dpm_serial_killer' then
-                elseif desc_profession == 'dpm_hitman' then
-                elseif desc_profession == 'dpm_priest' then
-                elseif desc_profession == 'dpm_nun' then
-                elseif desc_profession == 'dpm_missionary' then
-                elseif desc_profession == 'dpm_spiritual_leader' then
-                elseif desc_profession == 'dpm_psychic' then
-                elseif desc_profession == 'dpm_social_worker' then
-                elseif desc_profession == 'dpm_teacher' then
-                elseif desc_profession == 'dpm_professor' then
-                elseif desc_profession == 'dpm_student' then
-                elseif desc_profession == 'dpm_baker' then
-                elseif desc_profession == 'dpm_florist' then
-                elseif desc_profession == 'dpm_dietitian' then
-                elseif desc_profession == 'dpm_writer' then
-                elseif desc_profession == 'dpm_musician' then
-                elseif desc_profession == 'dpm_dancer' then
-                elseif desc_profession == 'dpm_actor' then
-                elseif desc_profession == 'dpm_artist' then
-                elseif desc_profession == 'dpm_comedian' then
-                elseif desc_profession == 'dpm_photographer' then
-                elseif desc_profession == 'dpm_professional_athlete_[football]' then
-                elseif desc_profession == 'dpm_professional_athlete_[baseball]' then
-                elseif desc_profession == 'dpm_professional_athlete_[basketball]' then
-                elseif desc_profession == 'dpm_professional_athlete_[track]' then
-                elseif desc_profession == 'dpm_referee' then
-                elseif desc_profession == 'dpm_bartender' then
-                elseif desc_profession == 'dpm_magician' then
-                elseif desc_profession == 'dpm_clown' then
-                elseif desc_profession == 'dpm_video_game_programmer' then
-                elseif desc_profession == 'dpm_performer' then
-                elseif desc_profession == 'dpm_film_director' then
-                elseif desc_profession == 'dpm_florist' then
-                elseif desc_profession == 'dpm_waiter' then
-                elseif desc_profession == 'dpm_warehouse_worker' then
-                elseif desc_profession == 'dpm_secretary' then
-                elseif desc_profession == 'dpm_taxi_driver' then
-                elseif desc_profession == 'dpm_retail_worker' then
-                end
-            end
+            getPlayer():getXp():addXpMultiplier(tooPickFrom[rand], 2.5, 0, 2)
+            tooPickFrom[rand] = nil
         end
     end
 end
 
-Events.OnNewGame.Add(DPMProfessions.DoNewGame);
-Events.OnGameBoot.Add(DPMProfessions.DoProfessions);
+DPMProfessions.DoDPMSetup = function()
+    DPMProfessions.DoTraits();
+    DPMProfessions.DoProfessions();
+end
+
+Events.OnGameBoot.Add(DPMProfessions.DoDPMSetup);
+Events.OnCreateLivingCharacter.Add(DPMProfessions.DoDPMSetup);
+Events.OnCreateLivingCharacter.Add(DPMProfessions.DoNewGame);
