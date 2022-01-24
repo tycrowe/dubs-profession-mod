@@ -93,7 +93,7 @@ DPMPerkMapping = {
 DPMFreeTraitConfig = {
     {
         type = "dpm_KeenHearing",
-        name = getText("UI_trait_keenhearing"),
+        name = getText("UI_trait_keenhearing") .. '.',
         cost = -2,
         desc = getText("UI_trait_keenhearingdesc"),
         profession = true,
@@ -103,9 +103,9 @@ DPMFreeTraitConfig = {
     },
     {
         type = "dpm_Cowardly",
-        name = getText("UI_trait_cowardly"),
+        name = getText("UI_trait_cowardly") .. '.',
         cost = 3,
-        desc = getText("UI_trait_keenhearingdesc"),
+        desc = getText("UI_trait_cowardlydesc"),
         profession = true,
         boosts = function(trait)
 
@@ -113,7 +113,7 @@ DPMFreeTraitConfig = {
     },
     {
         type = "dpm_EagleEyed",
-        name = getText("UI_trait_eagleeyed"),
+        name = getText("UI_trait_eagleeyed") .. '.',
         cost = -4,
         desc = getText("UI_trait_eagleeyeddesc"),
         profession = true,
@@ -123,7 +123,7 @@ DPMFreeTraitConfig = {
     },
     {
         type = "dpm_Strong",
-        name = getText("UI_trait_strong"),
+        name = getText("UI_trait_strong") .. '.',
         cost = -8,
         desc = getText("UI_trait_strongdesc"),
         profession = true,
@@ -133,7 +133,7 @@ DPMFreeTraitConfig = {
     },
     {
         type = "dpm_Feeble",
-        name = getText("UI_trait_feeble"),
+        name = getText("UI_trait_feeble") .. '.',
         cost = 0,
         desc = getText("UI_trait_feebledesc"),
         profession = true,
@@ -143,7 +143,7 @@ DPMFreeTraitConfig = {
     },
     {
         type = "dpm_Outdoorsman",
-        name = getText("UI_trait_outdoorsman"),
+        name = getText("UI_trait_outdoorsman") .. '.',
         cost = -4,
         desc = getText("UI_trait_outdoorsmandesc"),
         profession = true,
@@ -153,7 +153,7 @@ DPMFreeTraitConfig = {
     },
     {
         type = "dpm_FastReader",
-        name = getText("UI_trait_FastReader"),
+        name = getText("UI_trait_FastReader") .. '.',
         cost = -4,
         desc = getText("UI_trait_FastReaderDesc"),
         profession = true,
@@ -163,7 +163,7 @@ DPMFreeTraitConfig = {
     },
     {
         type = "dpm_Organized",
-        name = getText("UI_trait_Packmule"),
+        name = getText("UI_trait_Packmule") .. '.',
         cost = -4,
         desc = getText("UI_trait_PackmuleDesc"),
         profession = true,
@@ -173,7 +173,7 @@ DPMFreeTraitConfig = {
     },
     {
         type = "dpm_Pacifist",
-        name = getText("UI_trait_Pacifist"),
+        name = getText("UI_trait_Pacifist") .. '.',
         cost = 4,
         desc = getText("UI_trait_PacifistDesc"),
         profession = true,
@@ -183,7 +183,7 @@ DPMFreeTraitConfig = {
     },
     {
         type = "dpm_Brave",
-        name = getText("UI_trait_brave"),
+        name = getText("UI_trait_brave") .. '.',
         cost = -4,
         desc = getText("UI_trait_bravedesc"),
         profession = true,
@@ -192,7 +192,7 @@ DPMFreeTraitConfig = {
         end
     },
     {
-        type = "dpm_natural_learner",
+        type = "dpmCustom_natural_learner",
         name = "Further increased XP gains.",
         cost = -9,
         desc = "You gain experience slightly faster across the board.",
@@ -201,12 +201,27 @@ DPMFreeTraitConfig = {
     }
 }
 
-DPMProfessions.ApplyFreeTrait = function(prof, type, with_cost)
-    local temp = TraitFactory.getTrait(type)
-    if temp ~= nil then
-        prof:addFreeTrait(type);
-        if with_cost then
-            prof:setCost(prof:getCost() + temp:getCost())
+DPMProfessions.ApplyFreeTrait = function(prof, type, with_cost, player)
+    if player ~= nil then
+        -- Add to player
+        if string.find(type, 'dpm') then
+            print("Now swapping " .. type .. " for actual trait - if possible!")
+            -- TODO: Tighten this up, we want our own custom traits eventually.
+            local game_trait = string.sub(type, 5);
+            print('Game trait: ' .. game_trait)
+            print('DPM trait: ' .. type)
+            if not player:HasTrait(type) then player:getTraits():remove(type) end
+            player:getTraits():add(game_trait);
+            print('Successfully gave player game trait: ' .. type .. '!')
+        end
+    else
+        -- Add to profession
+        local temp = TraitFactory.getTrait(type)
+        if temp ~= nil then
+            prof:addFreeTrait(type);
+            if with_cost then
+                prof:setCost(prof:getCost() + temp:getCost())
+            end
         end
     end
 end
@@ -221,8 +236,12 @@ DPMProfessionsConfig = {
         perks = {
             Doctor = 1
         },
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_KeenHearing', false);
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_KeenHearing', false, player);
+        end,
+        inventory = function(playerObjInventory)
+            local bag = playerObj:getInventory():AddItem("Base.Bag_Satchel");
+            bag:getItemContainer():AddItem("Base.BaseballBat");
         end
     },
     {
@@ -232,9 +251,9 @@ DPMProfessionsConfig = {
         cost = 0,
         desc = "",
         perks = {},
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'NightOwl', false);
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Organized', true);
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'NightOwl', false, player);
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Organized', true, player);
         end
     },
     {
@@ -246,8 +265,8 @@ DPMProfessionsConfig = {
         perks = {
             Sprinting = 2
         },
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Feeble', true);
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Feeble', true, player);
         end
     },
     {
@@ -259,8 +278,8 @@ DPMProfessionsConfig = {
         perks = {
             Lightfoot = 2
         },
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_FastReader', false);
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_FastReader', false, player);
         end
     },
     {
@@ -272,7 +291,7 @@ DPMProfessionsConfig = {
         perks = {
             Doctor = 2
         },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
         end
     },
     {
@@ -286,7 +305,7 @@ DPMProfessionsConfig = {
             Sprinting = 2,
             Doctor = 1
         },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
         end
     },
     {
@@ -299,7 +318,7 @@ DPMProfessionsConfig = {
             Fitness = 2,
             Sprinting = 1
         },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
         end
     },
     {
@@ -316,7 +335,7 @@ DPMProfessionsConfig = {
             Sprinting = 2,
             Doctor = 1
         },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
         end
     },
     {
@@ -329,7 +348,7 @@ DPMProfessionsConfig = {
             Nimble = 2,
             Maintenance = 1
         },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
         end
     },
     {
@@ -343,7 +362,7 @@ DPMProfessionsConfig = {
             Lightfoot = 1,
             Fitness = 2
         },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
         end
     },
     {
@@ -353,9 +372,9 @@ DPMProfessionsConfig = {
         cost = 0,
         desc = "",
         perks = {},
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_EagleEyed', false);
-            DPMProfessions.ApplyFreeTrait(prof, 'NightOwl', false);
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_EagleEyed', false, player);
+            DPMProfessions.ApplyFreeTrait(prof, 'NightOwl', false, player);
         end
     },
     {
@@ -368,7 +387,7 @@ DPMProfessionsConfig = {
             PlantScavenging = 1,
             Farming = 2
         },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
         end
     },
     {
@@ -381,8 +400,8 @@ DPMProfessionsConfig = {
             Fitness = 2,
             Sprinting = 2
         },
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Outdoorsman', false);
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Outdoorsman', false, player);
         end
     },
     {
@@ -396,8 +415,8 @@ DPMProfessionsConfig = {
             Electricity = 3,
             MetalWelding = 1
         },
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Strong', false);
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Strong', false, player);
         end
     },
     {
@@ -411,7 +430,7 @@ DPMProfessionsConfig = {
             Maintenance = 1,
             SmallBlade = 1
         },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
         end
     },
     {
@@ -426,7 +445,7 @@ DPMProfessionsConfig = {
             Farming = 1,
             Fitness = 1
         },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
 
         end
     },
@@ -440,22 +459,8 @@ DPMProfessionsConfig = {
             Sneak = 3,
             Lightfoot = 2
         },
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Cowardly', false);
-        end
-    },
-    {
-        type = "dpm_professional_athlete",
-        name = "Professional Athlete",
-        icon = "dpm_professional_athlete_basketball.png",
-        cost = 0,
-        desc = "",
-        perks = {
-            Sprinting = 4,
-            Strength = 4,
-            Fitness = 4
-        },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Cowardly', false, player);
         end
     },
     {
@@ -468,8 +473,8 @@ DPMProfessionsConfig = {
             Strength = 2,
             Fitness = 1
         },
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Brave', false);
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Brave', false, player);
         end
     },
     {
@@ -481,9 +486,9 @@ DPMProfessionsConfig = {
         perks = {
 
         },
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Brave', false);
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_FastReader', true);
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_Brave', false, player);
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_FastReader', true, player);
         end
     },
     {
@@ -493,8 +498,8 @@ DPMProfessionsConfig = {
         cost = 0,
         desc = "",
         perks = {},
-        free_perks = function(prof)
-            DPMProfessions.ApplyFreeTrait(prof, 'dpm_natural_learner', true);
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_natural_learner', true, player);
         end
     },
     {
@@ -506,8 +511,144 @@ DPMProfessionsConfig = {
         perks = {
             Woodwork = 4
         },
-        free_perks = function(prof)
+        free_perks = function(prof, player)
 
+        end
+    },
+    {
+        type = "dpm_professional_athlete",
+        name = "Professional Basketball Player",
+        icon = "dpm_professional_athlete_basketball.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Sprinting = 4,
+            Strength = 4,
+            Fitness = 4
+        },
+        free_perks = function(prof, player)
+        end
+    },
+    {
+        type = "dpm_professional_athlete_baseball",
+        name = "Professional Baseball Player",
+        icon = "dpm_professional_athlete_baseball.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Sprinting = 4,
+            Strength = 3,
+            Fitness = 4,
+            Blunt = 6
+        },
+        free_perks = function(prof, player)
+
+        end
+    },
+    {
+        type = "dpm_professional_athlete_track",
+        name = "Olympic Athlete",
+        icon = "dpm_professional_athlete_track.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Sprinting = 8,
+            Fitness = 5,
+            Strength = 4
+        },
+        free_perks = function(prof, player)
+
+        end
+    },
+    {
+        type = "dpm_professional_athlete_football",
+        name = "Professional Football Player",
+        icon = "dpm_professional_athlete_football.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Sprinting = 4,
+            Strength = 8,
+            Fitness = 6
+        },
+        free_perks = function(prof, player)
+
+        end
+    },
+    {
+        type = "dpm_tailor",
+        name = "Tailor",
+        icon = "dpm_tailor.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Tailoring = 4
+        },
+        free_perks = function(prof, player)
+
+        end
+    },
+    {
+        type = "dpm_veterinarian",
+        name = "Veterinarian",
+        icon = "dpm_veterinarian.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Trapping = 2,
+            Doctor = 2,
+            SmallBlade = 1
+        },
+        free_perks = function(prof, player)
+
+        end
+    },
+    {
+        type = "dpm_serial_killer",
+        name = "Serial Killer",
+        icon = "dpm_serial_killer.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Sprinting = 2,
+            Strength = 4,
+            Fitness = 4,
+            SmallBlade = 3,
+            SmallBlunt = 2,
+            Trapping = 2
+        },
+        free_perks = function(prof, player)
+
+        end
+    },
+    {
+        type = "dpm_landscaper",
+        name = "Landscaper",
+        icon = "dpm_landscaper.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Woodwork = 3,
+            PlantScavenging = 2,
+            Strength = 2,
+            Fitness = 3
+        },
+        free_perks = function(prof, player)
+
+        end
+    },
+    {
+        type = "dpm_helicopter_pilot",
+        name = "Helicopter Pilot",
+        icon = "dpm_helicopter_pilot.png",
+        cost = 0,
+        desc = "",
+        perks = {
+            Nimble = 3,
+            Fitness = 1
+        },
+        free_perks = function(prof, player)
+            DPMProfessions.ApplyFreeTrait(prof, 'dpm_EagleEyed', false, player);
         end
     }
 }
@@ -907,43 +1048,44 @@ end
 
 DPMProfessions.DoNewGame = function(playerObj, square)
     -- https://zomboid-javadoc.com/41.65/zombie/characters/SurvivorDesc.html
-    local profession = playerObj:getDescriptor():getProfession();
-    if SandboxVars.StarterKit then
-        if string.find(profession, 'dpm') then
-            local bag = playerObj:getInventory():FindAndReturn("Base.Bag_Schoolbag");
-        end
-    end
-
-    local playerTraits = playerObj:getTraits();
-    for i = 1, playerTraits:size() do
-        local trait = playerTraits:get(i - 1);
-        if trait ~= nil and trait:contains("dpm_") then
-            getPlayer():getTraits():remove(trait);
-            trait = string.sub(trait, 5);
-            getPlayer():getTraits():add(trait);
-        end
-    end
-
-    if profession == 'dpm_entrepreneur' and playerObj:getZombieKills() <= 1 then
-        -- Pick three rand traits and apply a multiplier
-        local tooPickFrom = {
-            Perks.Cooking,
-            Perks.Woodwork,
-            Perks.Farming,
-            Perks.Fishing,
-            Perks.Trapping,
-            Perks.Tailoring,
-            Perks.MetalWelding,
-            Perks.Mechanics,
-            Perks.Electricity
-        }
-        for i = 1, 3 do
-            local rand = ZombRand(0, 8);
-            while (tooPickFrom[rand] == nil) do
-                rand = ZombRand(0, 8)
+    if playerObj then
+        local profession = playerObj:getDescriptor():getProfession();
+        if SandboxVars.StarterKit then
+            if string.find(profession, 'dpm') then
+                local bag = playerObj:getInventory():FindAndReturn("Base.Bag_Schoolbag");
             end
-            getPlayer():getXp():addXpMultiplier(tooPickFrom[rand], 2.5, 0, 2)
-            tooPickFrom[rand] = nil
+        end
+
+        for _, prof_from_list in ipairs(DPMProfessionsConfig) do
+            if profession == prof_from_list['type'] then
+                local temp = ProfessionFactory.getProfession(profession)
+                -- Apply free traits.
+                print("Applying 'real' traits.")
+                prof_from_list['free_perks'](temp, playerObj)
+            end
+        end
+
+        if profession == 'dpm_entrepreneur' and playerObj:getZombieKills() <= 1 then
+            -- Pick three rand traits and apply a multiplier
+            local tooPickFrom = {
+                Perks.Cooking,
+                Perks.Woodwork,
+                Perks.Farming,
+                Perks.Fishing,
+                Perks.Trapping,
+                Perks.Tailoring,
+                Perks.MetalWelding,
+                Perks.Mechanics,
+                Perks.Electricity
+            }
+            for i = 1, 3 do
+                local rand = ZombRand(0, 8);
+                while (tooPickFrom[rand] == nil) do
+                    rand = ZombRand(0, 8)
+                end
+                getPlayer():getXp():addXpMultiplier(tooPickFrom[rand], 2.5, 0, 2)
+                tooPickFrom[rand] = nil
+            end
         end
     end
 end
@@ -956,3 +1098,4 @@ end
 Events.OnGameBoot.Add(DPMProfessions.DoDPMSetup);
 Events.OnCreateLivingCharacter.Add(DPMProfessions.DoDPMSetup);
 Events.OnCreateLivingCharacter.Add(DPMProfessions.DoNewGame);
+Events.OnGameStart.Add(DPMProfessions.DoNewGame);
